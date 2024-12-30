@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AltSchool Application Form</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="form.html">Application Form</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div style="display: flex; justify-content: center; align-items: center;">
+            <!-- Picture on the left -->
+            <div style="flex: 1; padding: 20px;">
+                <img src="Pictures/Altschool Logo.png" alt="AltSchool Logo" style="max-width: 80%;">
+            </div>
+
+            <!-- Form on the right -->
+            <div style="flex: 1; padding: 20px;">
+                <h1>AltSchool Application Form</h1>
+                <form action="/submit" method="POST">
+                    <fieldset>
+                        <legend>Personal Information</legend><br>
+                        <label for="first-name">First Name:</label>
+                        <input type="text" id="first-name" name="first_name" placeholder="First Name" required><br><br>
+
+                        <label for="last-name">Last Name:</label>
+                        <input type="text" id="last-name" name="last_name" placeholder="Last Name" required><br><br>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" value="karabosteve2@gmail.com" required><br><br>
+
+                        <label for="gender">Gender:</label>
+                        <select id="gender" name="gender" required>
+                            <option value="" disabled selected>Select gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select><br><br>
+
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" id="dob" name="dob" required><br><br>
+
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Phone Number" required><br><br>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Location Information</legend><br>
+                        <label for="country">Country of Residence:</label>
+                        <input type="text" id="country" name="country" placeholder="Country of Residence" required><br><br>
+
+                        <label for="state">State of Residence:</label>
+                        <input type="text" id="state" name="state" placeholder="State of Residence" required><br><br>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Account Security</legend><br>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" placeholder="Password" required><br><br>
+
+                        <label for="confirm-password">Confirm Password:</label>
+                        <input type="password" id="confirm-password" name="confirm_password" placeholder="•••••••••••••" required><br><br>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Additional Information</legend><br>
+                        <label for="referral">How did you hear about us?</label>
+                        <input type="text" id="referral" name="referral" placeholder="e.g., Social Media, Friend, etc." required><br><br>
+                    </fieldset>
+
+                    <button type="submit">Submit Application</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Karabo Malatji | Address: Midrand, South Africa | <b>© 2024 All rights reserved.</b></p>
+    </footer>
+
+    <a href="#top">Back to Top</a>
+</body>
+</html>
